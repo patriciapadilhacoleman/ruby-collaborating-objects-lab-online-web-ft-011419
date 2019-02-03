@@ -26,7 +26,7 @@ class Artist
      
      if artist.length == 0
       
-       artist = self.new(name) 
+       artist = Artist.new(name) 
      
      end  
     
