@@ -17,9 +17,6 @@ class Song
    
     song.artist = artist.save
     artist.add_song(song)
-    
-    binding.pry
-   
     song
     
   end
