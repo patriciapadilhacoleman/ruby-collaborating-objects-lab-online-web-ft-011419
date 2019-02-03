@@ -13,9 +13,8 @@ class MP3Importer
   def files
     
     
-    files = Dir.entries(@path)
-    files = files.select {|filename| filename.include? ".mp3"}
-      
+    @files ||= Dir.chdir(@path) do
+      Dir.glob('mp3')
     
     
   
