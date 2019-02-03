@@ -14,7 +14,9 @@ class MP3Importer
     
     
     @files ||= Dir.chdir(@path) do
-      Dir.glob('mp3')
+      Dir.glob('*.mp3')
+      
+    end
     
     
   
