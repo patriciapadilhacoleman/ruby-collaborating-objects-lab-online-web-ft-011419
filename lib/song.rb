@@ -14,7 +14,7 @@ class Song
     artist_song = filename.split
     artist = Artist.new(artist_song[0]) 
     song = self.new(artist_song[1])
-    song.name = filename.split(" - ")[1]
+   
     song.artist = artist.save
    
     song
