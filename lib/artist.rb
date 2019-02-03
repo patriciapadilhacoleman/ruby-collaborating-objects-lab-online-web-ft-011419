@@ -10,7 +10,7 @@ class Artist
   
     @songs = []
     
-    self.save
+   
     
   end
   
@@ -41,6 +41,7 @@ class Artist
   def save
     
     @@all << self
+    self
     
   end
   
