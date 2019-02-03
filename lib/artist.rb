@@ -24,16 +24,13 @@ class Artist
   def self.find_or_create_by_name(name)
     
    
-     artist = @@all.select {|artist| artist.name == name} 
-     
-     if artist.length == 0
-      
-       artist = Artist.new(name) 
-     
-     end  
-    
-    
-    artist
+     artist = @@all.find do |a| 
+       
+       a.name == name
+       
+     end
+   
+      artist || Artist.new(name) 
    
     
   end
